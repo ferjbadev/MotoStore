@@ -13,8 +13,8 @@ export const Products = () => {
   const [sortBy, setSortBy] = useState('name');
 
   const categories = [
-    { value: 'all', label: 'Todas' },
-    { value: 'sport', label: 'Deportivas' },
+    { value: 'all', label: 'All' },
+    { value: 'sport', label: 'Sport' },
     { value: 'cruiser', label: 'Cruiser' },
     { value: 'touring', label: 'Touring' },
     { value: 'adventure', label: 'Adventure' },
@@ -72,8 +72,8 @@ export const Products = () => {
     <div className="products-page">
       <div className="container">
         <div className="page-header">
-          <h1>Nuestro Catálogo</h1>
-          <p>Explora nuestra selección de motocicletas premium</p>
+          <h1>Our Catalog</h1>
+          <p>Explore our selection of premium motorcycles</p>
         </div>
 
         {/* Filters */}
@@ -82,7 +82,7 @@ export const Products = () => {
             <Search size={20} />
             <input
               type="text"
-              placeholder="Buscar motos..."
+              placeholder="Search motorcycles..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -102,10 +102,10 @@ export const Products = () => {
             </select>
 
             <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
-              <option value="name">Nombre</option>
-              <option value="price-asc">Precio: Menor a Mayor</option>
-              <option value="price-desc">Precio: Mayor a Menor</option>
-              <option value="year">Año</option>
+              <option value="name">Name</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="year">Year</option>
             </select>
           </div>
         </div>
@@ -113,8 +113,8 @@ export const Products = () => {
         {/* Results */}
         <div className="results-info">
           <p>
-            Mostrando {filteredAndSortedMotorcycles.length} de {motorcycles.length}{' '}
-            motos
+            Showing {filteredAndSortedMotorcycles.length} of {motorcycles.length}{' '}
+            motorcycles
           </p>
         </div>
 
@@ -127,7 +127,7 @@ export const Products = () => {
           </div>
         ) : (
           <div className="no-results">
-            <p>No se encontraron motos con los filtros seleccionados.</p>
+            <p>No motorcycles found with the selected filters.</p>
           </div>
         )}
       </div>
