@@ -19,16 +19,16 @@ export const Header = () => {
 
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             <Link to="/" onClick={() => setIsMenuOpen(false)}>
-              Inicio
+              Home
             </Link>
             <Link to="/productos" onClick={() => setIsMenuOpen(false)}>
-              Productos
+              Products
             </Link>
             <Link to="/sobre-nosotros" onClick={() => setIsMenuOpen(false)}>
-              Sobre Nosotros
+              About Us
             </Link>
             <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>
-              Contacto
+              Contact
             </Link>
           </nav>
 
