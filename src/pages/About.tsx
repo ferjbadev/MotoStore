@@ -5,96 +5,96 @@ export const About = () => {
     <div className="about-page">
       <div className="container">
         <div className="page-header">
-          <h1>Sobre Nosotros</h1>
-          <p>Conoce más sobre MotoStore y nuestra pasión por las motocicletas</p>
+          <h1>About Us</h1>
+          <p>Learn more about MotoStore and our passion for motorcycles</p>
         </div>
 
         <div className="about-content">
           <section className="about-section">
-            <h2>Nuestra Historia</h2>
+            <h2>Our Story</h2>
             <p>
-              MotoStore nació en 2024 con una misión clara: hacer que las mejores
-              motocicletas del mundo sean accesibles para todos los entusiastas.
-              Comenzamos como un pequeño concesionario local y hemos crecido hasta
-              convertirnos en una de las tiendas de motocicletas más confiables
-              del país.
+              MotoStore was born in 2024 with a clear mission: to make the world's best
+              motorcycles accessible to all enthusiasts.
+              We started as a small local dealership and have grown to become
+              one of the most trusted motorcycle stores
+              in the country.
             </p>
             <p>
-              Nuestra pasión por las dos ruedas nos impulsa a ofrecer solo las
-              mejores marcas y modelos, junto con un servicio al cliente
-              excepcional que nos distingue de la competencia.
+              Our passion for two wheels drives us to offer only the
+              best brands and models, along with exceptional customer service
+              that sets us apart from the competition.
             </p>
           </section>
 
           <div className="values-grid">
             <div className="value-card">
               <Award size={40} />
-              <h3>Calidad Garantizada</h3>
+              <h3>Guaranteed Quality</h3>
               <p>
-                Todas nuestras motocicletas son nuevas y vienen con garantía de
-                fábrica completa.
+                All our motorcycles are new and come with
+                full factory warranty.
               </p>
             </div>
 
             <div className="value-card">
               <Users size={40} />
-              <h3>Equipo Experto</h3>
+              <h3>Expert Team</h3>
               <p>
-                Nuestro equipo está formado por entusiastas y profesionales con
-                años de experiencia.
+                Our team consists of enthusiasts and professionals with
+                years of experience.
               </p>
             </div>
 
             <div className="value-card">
               <Target size={40} />
-              <h3>Enfoque al Cliente</h3>
+              <h3>Customer Focus</h3>
               <p>
-                Tu satisfacción es nuestra prioridad. Estamos aquí para ayudarte
-                en cada paso.
+                Your satisfaction is our priority. We are here to help you
+                every step of the way.
               </p>
             </div>
 
             <div className="value-card">
               <Heart size={40} />
-              <h3>Pasión por las Motos</h3>
+              <h3>Passion for Motorcycles</h3>
               <p>
-                No solo vendemos motos, vivimos y respiramos la cultura
-                motociclista.
+                We don't just sell motorcycles, we live and breathe
+                motorcycle culture.
               </p>
             </div>
           </div>
 
           <section className="about-section">
-            <h2>¿Por Qué Elegirnos?</h2>
+            <h2>Why Choose Us?</h2>
             <ul className="benefits-list">
               <li>
-                <strong>Amplia Selección:</strong> Contamos con las mejores
-                marcas del mercado: Yamaha, Harley-Davidson, BMW, Ducati, y más.
+                <strong>Wide Selection:</strong> We have the best
+                brands on the market: Yamaha, Harley-Davidson, BMW, Ducati, and more.
               </li>
               <li>
-                <strong>Financiamiento Flexible:</strong> Ofrecemos planes de
-                pago adaptados a tu presupuesto.
+                <strong>Flexible Financing:</strong> We offer payment plans
+                tailored to your budget.
               </li>
               <li>
-                <strong>Servicio Post-Venta:</strong> Mantenimiento y reparación
-                con técnicos certificados.
+                <strong>After-Sales Service:</strong> Maintenance and repair
+                with certified technicians.
               </li>
               <li>
-                <strong>Asesoramiento Personalizado:</strong> Te ayudamos a
-                encontrar la moto perfecta para ti.
+                <strong>Personalized Advice:</strong> We help you
+                find the perfect motorcycle for you.
               </li>
               <li>
-                <strong>Entrega a Domicilio:</strong> Llevamos tu nueva moto
-                directamente a tu puerta.
+                <strong>Home Delivery:</strong> We bring your new motorcycle
+                directly to your door.
               </li>
             </ul>
           </section>
 
           <section className="cta-section">
-            <h2>¿Listo para Unirte a la Familia MotoStore?</h2>
+            <h2>Ready to Join the MotoStore Family?</h2>
             <p>
-              Visítanos en nuestra tienda o explora nuestro catálogo en línea.
-              ¡Estamos aquí para ayudarte a encontrar tu moto ideal!
+              Visit us at our store or explore our online catalog.
+              We're here to help you find your ideal motorcycle!
             </p>
           </section>
         </div>
