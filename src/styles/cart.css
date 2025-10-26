@@ -151,10 +151,12 @@
   background: white;
   padding: var(--spacing-xl);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-lg);
   height: fit-content;
   position: sticky;
   top: 100px;
+  border: 1px solid var(--border-color);
+  background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
 }
 
 .cart-summary h2 {
