@@ -13,14 +13,14 @@ export const Home = () => {
         <div className="container">
           <div className="hero-content">
             <h1 className="hero-title">
-              Encuentra la Moto de tus Sueños
+              Find Your Dream Motorcycle
             </h1>
             <p className="hero-subtitle">
-              Las mejores marcas y modelos del mercado. Calidad garantizada y
-              financiamiento disponible.
+              The best brands and models on the market. Guaranteed quality and
+              financing available.
             </p>
             <Link to="/productos" className="btn-primary">
-              Ver Catálogo
+              View Catalog
               <ArrowRight size={20} />
             </Link>
           </div>
@@ -33,23 +33,23 @@ export const Home = () => {
           <div className="features-grid">
             <div className="feature-card">
               <Shield size={40} />
-              <h3>Garantía Extendida</h3>
-              <p>Todas nuestras motos incluyen garantía de fábrica</p>
+              <h3>Extended Warranty</h3>
+              <p>All our motorcycles include factory warranty</p>
             </div>
             <div className="feature-card">
               <Truck size={40} />
-              <h3>Envío Gratis</h3>
-              <p>Entrega a domicilio sin costo adicional</p>
+              <h3>Free Shipping</h3>
+              <p>Home delivery at no additional cost</p>
             </div>
             <div className="feature-card">
               <CreditCard size={40} />
-              <h3>Financiamiento</h3>
-              <p>Planes de pago flexibles hasta 36 meses</p>
+              <h3>Financing</h3>
+              <p>Flexible payment plans up to 36 months</p>
             </div>
             <div className="feature-card">
               <Award size={40} />
-              <h3>Mejor Precio</h3>
-              <p>Garantizamos el mejor precio del mercado</p>
+              <h3>Best Price</h3>
+              <p>We guarantee the best price on the market</p>
             </div>
           </div>
         </div>
@@ -59,9 +59,9 @@ export const Home = () => {
       <section className="featured-products">
         <div className="container">
           <div className="section-header">
-            <h2>Motos Destacadas</h2>
+            <h2>Featured Motorcycles</h2>
             <Link to="/productos" className="view-all">
-              Ver todas <ArrowRight size={18} />
+              View All <ArrowRight size={18} />
             </Link>
           </div>
           <div className="products-grid">
@@ -76,17 +76,17 @@ export const Home = () => {
       <section className="cta-section">
         <div className="container">
           <div className="cta-content">
-            <h2>¿Listo para tu próxima aventura?</h2>
+            <h2>Ready for Your Next Adventure?</h2>
             <p>
-              Visita nuestra tienda o contáctanos para más información sobre
-              nuestros modelos disponibles.
+              Visit our store or contact us for more information about
+              our available models.
             </p>
             <div className="cta-buttons">
               <Link to="/productos" className="btn-primary">
-                Ver Catálogo
+                View Catalog
               </Link>
               <Link to="/contacto" className="btn-secondary">
-                Contactar
+                Contact
               </Link>
             </div>
           </div>
