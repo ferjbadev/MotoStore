@@ -34,27 +34,27 @@ export const Contact = () => {
     <div className="contact-page">
       <div className="container">
         <div className="page-header">
-          <h1>Contáctanos</h1>
-          <p>Estamos aquí para ayudarte. Envíanos un mensaje</p>
+          <h1>Contact Us</h1>
+          <p>We're here to help. Send us a message</p>
         </div>
 
         <div className="contact-layout">
           <div className="contact-info">
-            <h2>Información de Contacto</h2>
+            <h2>Contact Information</h2>
 
             <div className="contact-item">
               <MapPin size={24} />
               <div>
-                <h3>Dirección</h3>
-                <p>Calle Principal 123</p>
-                <p>Ciudad, Estado 12345</p>
+                <h3>Address</h3>
+                <p>123 Main Street</p>
+                <p>City, State 12345</p>
               </div>
             </div>
 
             <div className="contact-item">
               <Phone size={24} />
               <div>
-                <h3>Teléfono</h3>
+                <h3>Phone</h3>
                 <p>+1 234 567 890</p>
                 <p>+1 234 567 891</p>
               </div>
@@ -65,32 +65,32 @@ export const Contact = () => {
               <div>
                 <h3>Email</h3>
                 <p>info@motostore.com</p>
-                <p>ventas@motostore.com</p>
+                <p>sales@motostore.com</p>
               </div>
             </div>
 
             <div className="contact-item">
               <Clock size={24} />
               <div>
-                <h3>Horario</h3>
-                <p>Lunes - Viernes: 9:00 - 18:00</p>
-                <p>Sábado: 10:00 - 16:00</p>
-                <p>Domingo: Cerrado</p>
+                <h3>Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
               </div>
             </div>
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
-            <h2>Envíanos un Mensaje</h2>
+            <h2>Send Us a Message</h2>
 
             {submitted && (
               <div className="success-message">
-                ¡Mensaje enviado con éxito! Te responderemos pronto.
+                Message sent successfully! We'll respond soon.
               </div>
             )}
 
             <div className="form-group">
-              <label htmlFor="name">Nombre *</label>
+              <label htmlFor="name">Name *</label>
               <input
                 type="text"
                 id="name"
@@ -114,7 +114,7 @@ export const Contact = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="subject">Asunto *</label>
+              <label htmlFor="subject">Subject *</label>
               <input
                 type="text"
                 id="subject"
@@ -126,7 +126,7 @@ export const Contact = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="message">Mensaje *</label>
+              <label htmlFor="message">Message *</label>
               <textarea
                 id="message"
                 name="message"
@@ -139,7 +139,7 @@ export const Contact = () => {
 
             <button type="submit" className="btn-primary">
               <Send size={20} />
-              Enviar Mensaje
+              Send Message
             </button>
           </form>
         </div>
