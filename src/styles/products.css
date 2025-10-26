@@ -164,6 +164,7 @@
 .card-title {
   font-size: 1.25rem;
   margin-bottom: var(--spacing-sm);
+  text-align: center;
 }
 
 .card-specs {
