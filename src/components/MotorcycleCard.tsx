@@ -20,7 +20,7 @@ export const MotorcycleCard = ({ motorcycle }: MotorcycleCardProps) => {
       <div className="card-image">
         <img src={motorcycle.image} alt={motorcycle.name} />
         {!motorcycle.inStock && (
-          <div className="out-of-stock-badge">Agotado</div>
+          <div className="out-of-stock-badge">Out of Stock</div>
         )}
         <div className="card-overlay">
           <Link to={`/producto/${motorcycle.id}`} className="btn-icon">
@@ -43,7 +43,7 @@ export const MotorcycleCard = ({ motorcycle }: MotorcycleCardProps) => {
             disabled={!motorcycle.inStock}
           >
             <ShoppingCart size={18} />
-            Agregar
+            Add
           </button>
         </div>
       </div>
