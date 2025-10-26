@@ -1,73 +1,149 @@
-# React + TypeScript + Vite
+# 🏍️ MotoStore - E-commerce de Motocicletas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-commerce moderno y completo para la venta de motocicletas, construido con React, TypeScript y Vite.
 
-Currently, two official plugins are available:
+## ✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🛒 **Carrito de Compras**: Sistema completo de gestión de carrito con persistencia
+- 🔍 **Búsqueda y Filtros**: Búsqueda por texto y filtros por categoría
+- 📱 **Diseño Responsive**: Optimizado para móviles, tablets y desktop
+- 🎨 **UI Moderna**: Interfaz limpia y atractiva con animaciones suaves
+- 🚀 **Rendimiento**: Carga rápida y optimizada con Vite
+- 📦 **12 Modelos**: Catálogo con motos de marcas premium (Yamaha, Ducati, BMW, etc.)
+- 💳 **Proceso de Checkout**: Flujo completo de compra simulado
 
-## React Compiler
+## 🛠️ Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - Biblioteca de UI
+- **TypeScript** - Tipado estático
+- **Vite** - Build tool y dev server
+- **React Router** - Navegación
+- **Lucide React** - Iconos
+- **CSS Modules** - Estilos modulares
 
-## Expanding the ESLint configuration
+## 📁 Estructura del Proyecto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+MotoStore/
+├── src/
+│   ├── components/       # Componentes reutilizables
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   └── MotorcycleCard.tsx
+│   ├── pages/           # Páginas de la aplicación
+│   │   ├── Home.tsx
+│   │   ├── Products.tsx
+│   │   ├── ProductDetail.tsx
+│   │   ├── Cart.tsx
+│   │   ├── Checkout.tsx
+│   │   ├── About.tsx
+│   │   └── Contact.tsx
+│   ├── context/         # Context API
+│   │   └── CartContext.tsx
+│   ├── hooks/           # Custom hooks
+│   │   └── useCart.ts
+│   ├── data/            # Datos estáticos
+│   │   └── motorcycles.ts
+│   ├── types/           # Definiciones TypeScript
+│   │   └── index.ts
+│   ├── styles/          # Estilos modulares
+│   │   ├── variables.css
+│   │   ├── base.css
+│   │   ├── buttons.css
+│   │   ├── header.css
+│   │   ├── footer.css
+│   │   ├── home.css
+│   │   ├── products.css
+│   │   ├── product-detail.css
+│   │   ├── cart.css
+│   │   ├── checkout.css
+│   │   └── pages.css
+│   ├── App.tsx
+│   └── main.tsx
+└── package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Instalación y Uso
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Requisitos Previos
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js 20.19.0 o superior
+- npm 10.9.0 o superior
+
+### Instalación
+
+```bash
+# Clonar el repositorio
+git clone <repository-url>
+
+# Navegar al directorio
+cd MotoStore
+
+# Instalar dependencias
+npm install
 ```
+
+### Desarrollo
+
+```bash
+# Iniciar servidor de desarrollo
+npm run dev
+```
+
+La aplicación estará disponible en `http://localhost:5173`
+
+### Build para Producción
+
+```bash
+# Crear build optimizado
+npm run build
+
+# Preview del build
+npm run preview
+```
+
+## 📄 Páginas
+
+- **Home** (`/`) - Página principal con hero, características y motos destacadas
+- **Productos** (`/productos`) - Catálogo completo con búsqueda y filtros
+- **Detalle** (`/producto/:id`) - Información detallada de cada moto
+- **Carrito** (`/carrito`) - Gestión del carrito de compras
+- **Checkout** (`/checkout`) - Proceso de finalización de compra
+- **Sobre Nosotros** (`/sobre-nosotros`) - Información de la empresa
+- **Contacto** (`/contacto`) - Formulario de contacto
+
+## 🎨 Características de UI/UX
+
+- Animaciones suaves en hover y transiciones
+- Cards de productos con overlay interactivo
+- Header sticky con badge de carrito
+- Footer completo con enlaces y redes sociales
+- Formularios validados
+- Mensajes de confirmación
+- Diseño mobile-first
+
+## 🔧 Personalización
+
+### Colores
+
+Edita `src/styles/variables.css` para cambiar la paleta de colores:
+
+```css
+:root {
+  --primary-color: #ff6b35;
+  --secondary-color: #1a1a1a;
+  /* ... más variables */
+}
+```
+
+### Datos de Motos
+
+Modifica `src/data/motorcycles.ts` para agregar o editar motos del catálogo.
+
+## 📝 Licencia
+
+Este proyecto es de código abierto y está disponible bajo la licencia MIT.
+
+## 👨‍💻 Autor
+
+Desarrollado con ❤️ para entusiastas de las motocicletas
