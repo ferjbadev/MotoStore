@@ -9,8 +9,8 @@ export const Footer = () => {
           <div className="footer-section">
             <h3>MotoStore</h3>
             <p>
-              Tu tienda de confianza para encontrar la moto de tus sueños.
-              Ofrecemos las mejores marcas y modelos del mercado.
+              Your trusted store to find the motorcycle of your dreams.
+              We offer the best brands and models on the market.
             </p>
             <div className="social-links">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -26,19 +26,19 @@ export const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h4>Enlaces Rápidos</h4>
+            <h4>Quick Links</h4>
             <ul>
-              <li><Link to="/">Inicio</Link></li>
-              <li><Link to="/productos">Productos</Link></li>
-              <li><Link to="/sobre-nosotros">Sobre Nosotros</Link></li>
-              <li><Link to="/contacto">Contacto</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/productos">Products</Link></li>
+              <li><Link to="/sobre-nosotros">About Us</Link></li>
+              <li><Link to="/contacto">Contact</Link></li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4>Categorías</h4>
+            <h4>Categories</h4>
             <ul>
-              <li><Link to="/productos?category=sport">Deportivas</Link></li>
+              <li><Link to="/productos?category=sport">Sport</Link></li>
               <li><Link to="/productos?category=cruiser">Cruiser</Link></li>
               <li><Link to="/productos?category=touring">Touring</Link></li>
               <li><Link to="/productos?category=adventure">Adventure</Link></li>
@@ -47,11 +47,11 @@ export const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h4>Contacto</h4>
+            <h4>Contact</h4>
             <ul className="contact-info">
               <li>
                 <MapPin size={16} />
-                <span>Calle Principal 123, Ciudad</span>
+                <span>123 Main Street, City</span>
               </li>
               <li>
                 <Phone size={16} />
@@ -66,7 +66,7 @@ export const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 MotoStore. Todos los derechos reservados.</p>
+          <p>&copy; 2024 MotoStore. All rights reserved.</p>
         </div>
       </div>
     </footer>
