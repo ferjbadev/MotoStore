@@ -50,16 +50,16 @@ export const Checkout = () => {
         <div className="container">
           <div className="order-success">
             <CheckCircle size={64} />
-            <h1>¡Pedido Completado!</h1>
+            <h1>Order Completed!</h1>
             <p>
-              Gracias por tu compra. Recibirás un correo de confirmación con los
-              detalles de tu pedido.
+              Thank you for your purchase. You will receive a confirmation email with
+              your order details.
             </p>
             <button
               className="btn-primary"
               onClick={() => navigate('/productos')}
             >
-              Continuar Comprando
+              Continue Shopping
             </button>
           </div>
         </div>
@@ -70,15 +70,15 @@ export const Checkout = () => {
   return (
     <div className="checkout-page">
       <div className="container">
-        <h1 className="page-title">Finalizar Compra</h1>
+        <h1 className="page-title">Checkout</h1>
 
         <div className="checkout-layout">
           <form className="checkout-form" onSubmit={handleSubmit}>
             <div className="form-section">
-              <h2>Información de Contacto</h2>
+              <h2>Contact Information</h2>
 
               <div className="form-group">
-                <label htmlFor="name">Nombre Completo *</label>
+                <label htmlFor="name">Full Name *</label>
                 <input
                   type="text"
                   id="name"
@@ -103,7 +103,7 @@ export const Checkout = () => {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="phone">Teléfono *</label>
+                  <label htmlFor="phone">Phone *</label>
                   <input
                     type="tel"
                     id="phone"
@@ -117,10 +117,10 @@ export const Checkout = () => {
             </div>
 
             <div className="form-section">
-              <h2>Dirección de Envío</h2>
+              <h2>Shipping Address</h2>
 
               <div className="form-group">
-                <label htmlFor="address">Dirección *</label>
+                <label htmlFor="address">Address *</label>
                 <input
                   type="text"
                   id="address"
@@ -133,7 +133,7 @@ export const Checkout = () => {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="city">Ciudad *</label>
+                  <label htmlFor="city">City *</label>
                   <input
                     type="text"
                     id="city"
@@ -145,7 +145,7 @@ export const Checkout = () => {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="zipCode">Código Postal *</label>
+                  <label htmlFor="zipCode">Zip Code *</label>
                   <input
                     type="text"
                     id="zipCode"
@@ -159,14 +159,14 @@ export const Checkout = () => {
             </div>
 
             <div className="form-section">
-              <h2>Método de Pago</h2>
+              <h2>Payment Method</h2>
               <div className="payment-method">
                 <CreditCard size={24} />
-                <span>Tarjeta de Crédito/Débito</span>
+                <span>Credit/Debit Card</span>
               </div>
               <p className="payment-note">
-                El pago se procesará de forma segura. Esta es una demostración,
-                no se realizará ningún cargo real.
+                Payment will be processed securely. This is a demo,
+                no actual charges will be made.
               </p>
             </div>
 
@@ -175,12 +175,12 @@ export const Checkout = () => {
               className="btn-primary btn-full"
               disabled={isProcessing}
             >
-              {isProcessing ? 'Procesando...' : 'Confirmar Pedido'}
+              {isProcessing ? 'Processing...' : 'Confirm Order'}
             </button>
           </form>
 
           <div className="order-summary">
-            <h2>Resumen del Pedido</h2>
+            <h2>Order Summary</h2>
 
             <div className="summary-items">
               {cart.map((item) => (
@@ -192,7 +192,7 @@ export const Checkout = () => {
                   <div className="summary-item-info">
                     <p className="summary-item-name">{item.motorcycle.name}</p>
                     <p className="summary-item-quantity">
-                      Cantidad: {item.quantity}
+                      Quantity: {item.quantity}
                     </p>
                   </div>
                   <p className="summary-item-price">
@@ -210,8 +210,8 @@ export const Checkout = () => {
             </div>
 
             <div className="summary-row">
-              <span>Envío:</span>
-              <span className="free-shipping">Gratis</span>
+              <span>Shipping:</span>
+              <span className="free-shipping">Free</span>
             </div>
 
             <div className="summary-divider"></div>
