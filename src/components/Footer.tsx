@@ -66,7 +66,7 @@ export const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 MotoStore. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} MotoStore. All rights reserved.</p>
         </div>
       </div>
     </footer>
