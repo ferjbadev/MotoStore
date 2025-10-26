@@ -1,17 +1,34 @@
 import { Link } from 'react-router-dom';
 import { ShoppingCart, Menu, X, Bike } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useCart } from '../hooks/useCart';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { getCartCount } = useCart();
   const cartCount = getCartCount();
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   return (
     <header className="header">
       <div className="container">
-        <div className="header-content">
+        <div className="header-content" ref={menuRef}>
           <Link to="/" className="logo">
             <Bike size={32} />
             <span>MotoStore</span>
