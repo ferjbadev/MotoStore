@@ -14,9 +14,9 @@ export const ProductDetail = () => {
     return (
       <div className="container">
         <div className="not-found">
-          <h2>Producto no encontrado</h2>
+          <h2>Product not found</h2>
           <Link to="/productos" className="btn-primary">
-            Volver al catálogo
+            Back to catalog
           </Link>
         </div>
       </div>
@@ -33,7 +33,7 @@ export const ProductDetail = () => {
       <div className="container">
         <Link to="/productos" className="back-link">
           <ArrowLeft size={20} />
-          Volver al catálogo
+          Back to catalog
         </Link>
 
         <div className="detail-grid">
@@ -49,7 +49,7 @@ export const ProductDetail = () => {
             </p>
 
             <div className="detail-price">
-              <span className="price-label">Precio:</span>
+              <span className="price-label">Price:</span>
               <span className="price-value">
                 ${motorcycle.price.toLocaleString()}
               </span>
@@ -58,29 +58,29 @@ export const ProductDetail = () => {
             <p className="detail-description">{motorcycle.description}</p>
 
             <div className="detail-specs">
-              <h3>Especificaciones Técnicas</h3>
+              <h3>Technical Specifications</h3>
               <div className="specs-grid">
                 <div className="spec-item">
-                  <span className="spec-label">Motor:</span>
+                  <span className="spec-label">Engine:</span>
                   <span className="spec-value">{motorcycle.engine}</span>
                 </div>
                 <div className="spec-item">
-                  <span className="spec-label">Potencia:</span>
+                  <span className="spec-label">Power:</span>
                   <span className="spec-value">{motorcycle.power}</span>
                 </div>
                 <div className="spec-item">
-                  <span className="spec-label">Peso:</span>
+                  <span className="spec-label">Weight:</span>
                   <span className="spec-value">{motorcycle.weight}</span>
                 </div>
                 <div className="spec-item">
-                  <span className="spec-label">Año:</span>
+                  <span className="spec-label">Year:</span>
                   <span className="spec-value">{motorcycle.year}</span>
                 </div>
               </div>
             </div>
 
             <div className="detail-features">
-              <h3>Características</h3>
+              <h3>Features</h3>
               <ul>
                 {motorcycle.features.map((feature, index) => (
                   <li key={index}>
@@ -96,12 +96,12 @@ export const ProductDetail = () => {
                 <>
                   <button className="btn-primary" onClick={handleAddToCart}>
                     <ShoppingCart size={20} />
-                    Agregar al Carrito
+                    Add to Cart
                   </button>
-                  <span className="stock-status in-stock">En Stock</span>
+                  <span className="stock-status in-stock">In Stock</span>
                 </>
               ) : (
-                <span className="stock-status out-of-stock">Agotado</span>
+                <span className="stock-status out-of-stock">Out of Stock</span>
               )}
             </div>
           </div>
