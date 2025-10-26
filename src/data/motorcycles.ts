@@ -9,17 +9,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 17999,
     image: 'https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&h=600&fit=crop',
-    description: 'La legendaria superbike de Yamaha con tecnología MotoGP. Motor de 998cc con 200 HP.',
+    description: 'The legendary Yamaha superbike with MotoGP technology. 998cc engine with 200 HP.',
     category: 'sport',
-    engine: '998cc, 4 cilindros en línea',
+    engine: '998cc, Inline 4-cylinder',
     power: '200 HP @ 13,500 rpm',
     weight: '201 kg',
     features: [
-      'Control de tracción',
+      'Traction control',
       'ABS',
-      'Modos de conducción',
+      'Riding modes',
       'Quick shifter',
-      'Suspensión electrónica'
+      'Electronic suspension'
     ],
     inStock: true
   },
@@ -31,17 +31,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 21999,
     image: 'https://images.unsplash.com/photo-1558980664-769d59546b3d?w=800&h=600&fit=crop',
-    description: 'Icónica cruiser americana con motor Milwaukee-Eight 114. Perfecta para viajes largos.',
+    description: 'Iconic American cruiser with Milwaukee-Eight 114 engine. Perfect for long trips.',
     category: 'cruiser',
     engine: '1868cc, V-Twin Milwaukee-Eight 114',
     power: '119 HP @ 5,020 rpm',
     weight: '362 kg',
     features: [
-      'Sistema de audio premium',
+      'Premium audio system',
       'Cruise control',
-      'Pantalla táctil',
-      'Suspensión ajustable',
-      'Frenos Brembo'
+      'Touchscreen display',
+      'Adjustable suspension',
+      'Brembo brakes'
     ],
     inStock: true
   },
@@ -53,17 +53,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 19500,
     image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&h=600&fit=crop',
-    description: 'La adventure bike más vendida del mundo. Motor boxer de 1254cc con tecnología ShiftCam.',
+    description: 'The world\'s best-selling adventure bike. 1254cc boxer engine with ShiftCam technology.',
     category: 'adventure',
-    engine: '1254cc, Boxer bicilíndrico',
+    engine: '1254cc, Boxer twin-cylinder',
     power: '136 HP @ 7,750 rpm',
     weight: '249 kg',
     features: [
-      'Control de tracción ASC',
-      'Modos de conducción Pro',
-      'Suspensión electrónica',
-      'Pantalla TFT',
-      'Conectividad Bluetooth'
+      'ASC traction control',
+      'Pro riding modes',
+      'Electronic suspension',
+      'TFT display',
+      'Bluetooth connectivity'
     ],
     inStock: true
   },
@@ -75,7 +75,7 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 24995,
     image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&h=600&fit=crop',
-    description: 'Superbike italiana con motor V4 Desmosedici Stradale. Pura tecnología de MotoGP.',
+    description: 'Italian superbike with V4 Desmosedici Stradale engine. Pure MotoGP technology.',
     category: 'sport',
     engine: '1103cc, V4 Desmosedici Stradale',
     power: '214 HP @ 13,000 rpm',
@@ -84,8 +84,8 @@ export const motorcycles: Motorcycle[] = [
       'Ducati Traction Control EVO 3',
       'Cornering ABS EVO',
       'Ducati Quick Shift EVO 2',
-      'Suspensión Öhlins',
-      'Alas aerodinámicas'
+      'Öhlins suspension',
+      'Aerodynamic wings'
     ],
     inStock: true
   },
@@ -97,17 +97,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 29000,
     image: 'https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=800&h=600&fit=crop',
-    description: 'La moto de producción con compresor. Motor sobrealimentado de 998cc con 231 HP.',
+    description: 'The supercharged production motorcycle. 998cc supercharged engine with 231 HP.',
     category: 'sport',
-    engine: '998cc, 4 cilindros en línea sobrealimentado',
+    engine: '998cc, Supercharged inline 4-cylinder',
     power: '231 HP @ 11,500 rpm',
     weight: '238 kg',
     features: [
-      'Motor sobrealimentado',
-      'Control de tracción KTRC',
+      'Supercharged engine',
+      'KTRC traction control',
       'Launch control',
-      'Quick shifter bidireccional',
-      'Frenos Brembo Stylema'
+      'Bidirectional quick shifter',
+      'Brembo Stylema brakes'
     ],
     inStock: false
   },
@@ -119,17 +119,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 28500,
     image: 'https://images.unsplash.com/photo-1568772684993-e3d9d1befd1d?w=800&h=600&fit=crop',
-    description: 'La touring de lujo definitiva. Motor boxer de 6 cilindros con máximo confort.',
+    description: 'The ultimate luxury touring bike. 6-cylinder boxer engine with maximum comfort.',
     category: 'touring',
-    engine: '1833cc, Boxer 6 cilindros',
+    engine: '1833cc, 6-cylinder boxer',
     power: '126 HP @ 5,500 rpm',
     weight: '383 kg',
     features: [
-      'Sistema de navegación',
+      'Navigation system',
       'Apple CarPlay',
-      'Airbag frontal',
-      'Suspensión electrónica',
-      'Asientos calefactados'
+      'Front airbag',
+      'Electronic suspension',
+      'Heated seats'
     ],
     inStock: true
   },
@@ -141,17 +141,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 11999,
     image: 'https://images.unsplash.com/photo-1591768575957-a4b2f2e6e6e3?w=800&h=600&fit=crop',
-    description: 'Naked deportiva con carácter agresivo. Motor bicilíndrico paralelo de 890cc.',
+    description: 'Aggressive sport naked. 890cc parallel twin-cylinder engine.',
     category: 'naked',
-    engine: '889cc, Bicilíndrico paralelo',
+    engine: '889cc, Parallel twin-cylinder',
     power: '115 HP @ 9,000 rpm',
     weight: '169 kg',
     features: [
-      'Modos de conducción',
-      'Control de tracción MTC',
+      'Riding modes',
+      'MTC traction control',
       'Quick shifter',
-      'Pantalla TFT',
-      'Conectividad smartphone'
+      'TFT display',
+      'Smartphone connectivity'
     ],
     inStock: true
   },
@@ -163,17 +163,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 13500,
     image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&h=600&fit=crop',
-    description: 'Clásica británica moderna. Motor bicilíndrico paralelo de 1200cc con estilo retro.',
+    description: 'Modern British classic. 1200cc parallel twin-cylinder engine with retro style.',
     category: 'cruiser',
-    engine: '1200cc, Bicilíndrico paralelo',
+    engine: '1200cc, Parallel twin-cylinder',
     power: '80 HP @ 6,550 rpm',
     weight: '236 kg',
     features: [
       'ABS',
-      'Control de tracción',
-      'Modos de conducción',
-      'Instrumentación clásica',
-      'Escape doble'
+      'Traction control',
+      'Riding modes',
+      'Classic instrumentation',
+      'Dual exhaust'
     ],
     inStock: true
   },
@@ -185,17 +185,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 16499,
     image: 'https://images.unsplash.com/photo-1558980664-1db506751c6c?w=800&h=600&fit=crop',
-    description: 'Superbike japonesa con tecnología MotoGP. Motor de 999cc con 202 HP.',
+    description: 'Japanese superbike with MotoGP technology. 999cc engine with 202 HP.',
     category: 'sport',
-    engine: '999cc, 4 cilindros en línea',
+    engine: '999cc, Inline 4-cylinder',
     power: '202 HP @ 13,200 rpm',
     weight: '203 kg',
     features: [
-      'Sistema de frenado combinado',
-      'Control de tracción',
+      'Combined braking system',
+      'Traction control',
       'Launch control',
       'Quick shifter',
-      'Suspensión Showa'
+      'Showa suspension'
     ],
     inStock: true
   },
@@ -207,7 +207,7 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 18999,
     image: 'https://images.unsplash.com/photo-1558980664-3a031cf67ea8?w=800&h=600&fit=crop',
-    description: 'Naked extrema con motor V4 de 175 HP. Pura adrenalina italiana.',
+    description: 'Extreme naked with 175 HP V4 engine. Pure Italian adrenaline.',
     category: 'naked',
     engine: '1077cc, V4',
     power: '175 HP @ 11,000 rpm',
@@ -215,9 +215,9 @@ export const motorcycles: Motorcycle[] = [
     features: [
       'APRC (Aprilia Performance Ride Control)',
       'Cornering ABS',
-      'Control de crucero',
+      'Cruise control',
       'Quick shifter',
-      'Suspensión Sachs'
+      'Sachs suspension'
     ],
     inStock: true
   },
@@ -229,17 +229,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 12499,
     image: 'https://images.unsplash.com/photo-1558980664-769d59546b3d?w=800&h=600&fit=crop',
-    description: 'Bobber americana con estilo minimalista. Motor V-Twin de 1133cc.',
+    description: 'American bobber with minimalist style. 1133cc V-Twin engine.',
     category: 'cruiser',
     engine: '1133cc, V-Twin',
     power: '100 HP @ 8,100 rpm',
     weight: '256 kg',
     features: [
       'ABS',
-      'Control de tracción',
-      'Asiento bajo',
-      'Escape deportivo',
-      'Instrumentación digital'
+      'Traction control',
+      'Low seat',
+      'Sport exhaust',
+      'Digital instrumentation'
     ],
     inStock: true
   },
@@ -251,17 +251,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 14999,
     image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&h=600&fit=crop',
-    description: 'Sport touring versátil con motor CP3 de 890cc. Perfecta para viajes y diversión.',
+    description: 'Versatile sport touring with 890cc CP3 engine. Perfect for trips and fun.',
     category: 'touring',
-    engine: '890cc, 3 cilindros en línea',
+    engine: '890cc, Inline 3-cylinder',
     power: '119 HP @ 10,000 rpm',
     weight: '220 kg',
     features: [
-      'Control de crucero adaptativo',
-      'Pantalla TFT',
+      'Adaptive cruise control',
+      'TFT display',
       'Quick shifter',
-      'Maletas laterales',
-      'Suspensión electrónica'
+      'Side cases',
+      'Electronic suspension'
     ],
     inStock: true
   },
@@ -273,17 +273,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 9999,
     image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&h=600&fit=crop',
-    description: 'Naked deportiva con diseño agresivo y motor de 948cc. Perfecta para la ciudad y carretera.',
+    description: 'Sport naked with aggressive design and 948cc engine. Perfect for city and highway.',
     category: 'naked',
-    engine: '948cc, 4 cilindros en línea',
+    engine: '948cc, Inline 4-cylinder',
     power: '125 HP @ 9,500 rpm',
     weight: '210 kg',
     features: [
       'ABS',
-      'Control de tracción',
-      'Modos de conducción',
-      'Pantalla TFT',
-      'LED completo'
+      'Traction control',
+      'Riding modes',
+      'TFT display',
+      'Full LED'
     ],
     inStock: true
   },
@@ -295,17 +295,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 9499,
     image: 'https://images.unsplash.com/photo-1591768575957-a4b2f2e6e6e3?w=800&h=600&fit=crop',
-    description: 'Naked neo-retro con motor de 4 cilindros. Equilibrio perfecto entre estilo y rendimiento.',
+    description: 'Neo-retro naked with 4-cylinder engine. Perfect balance between style and performance.',
     category: 'naked',
-    engine: '649cc, 4 cilindros en línea',
+    engine: '649cc, Inline 4-cylinder',
     power: '95 HP @ 12,000 rpm',
     weight: '202 kg',
     features: [
       'ABS',
-      'Frenos Nissin',
-      'Suspensión Showa',
-      'LED completo',
-      'Pantalla LCD'
+      'Nissin brakes',
+      'Showa suspension',
+      'Full LED',
+      'LCD display'
     ],
     inStock: true
   },
@@ -317,17 +317,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 14299,
     image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&h=600&fit=crop',
-    description: 'Adventure touring con motor V-Twin de 1037cc. Lista para cualquier aventura.',
+    description: 'Adventure touring with 1037cc V-Twin engine. Ready for any adventure.',
     category: 'adventure',
     engine: '1037cc, V-Twin',
     power: '107 HP @ 8,500 rpm',
     weight: '247 kg',
     features: [
-      'Control de tracción',
-      'Modos de conducción',
+      'Traction control',
+      'Riding modes',
       'Cruise control',
-      'Pantalla TFT',
-      'Maletas opcionales'
+      'TFT display',
+      'Optional cases'
     ],
     inStock: true
   },
@@ -339,7 +339,7 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 12995,
     image: 'https://images.unsplash.com/photo-1558980664-3a031cf67ea8?w=800&h=600&fit=crop',
-    description: 'Icónica naked italiana con motor Testastretta de 937cc. Pura emoción italiana.',
+    description: 'Iconic Italian naked with 937cc Testastretta engine. Pure Italian emotion.',
     category: 'naked',
     engine: '937cc, L-Twin Testastretta',
     power: '111 HP @ 9,250 rpm',
@@ -347,9 +347,9 @@ export const motorcycles: Motorcycle[] = [
     features: [
       'Ducati Traction Control',
       'Cornering ABS',
-      'Modos de conducción',
+      'Riding modes',
       'Quick shifter',
-      'Pantalla TFT'
+      'TFT display'
     ],
     inStock: true
   },
@@ -361,17 +361,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 18500,
     image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&h=600&fit=crop',
-    description: 'Super naked británica con motor de 1160cc. Máximo rendimiento y tecnología.',
+    description: 'British super naked with 1160cc engine. Maximum performance and technology.',
     category: 'naked',
-    engine: '1160cc, 3 cilindros en línea',
+    engine: '1160cc, Inline 3-cylinder',
     power: '180 HP @ 10,750 rpm',
     weight: '199 kg',
     features: [
-      'Control de tracción optimizado',
+      'Optimized traction control',
       'Cornering ABS',
-      'Quick shifter bidireccional',
-      'Suspensión Öhlins',
-      'Frenos Brembo Stylema'
+      'Bidirectional quick shifter',
+      'Öhlins suspension',
+      'Brembo Stylema brakes'
     ],
     inStock: true
   },
@@ -383,17 +383,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 19999,
     image: 'https://images.unsplash.com/photo-1591768575957-a4b2f2e6e6e3?w=800&h=600&fit=crop',
-    description: 'La bestia naked de KTM. Motor V-Twin de 1301cc con 180 HP de pura adrenalina.',
+    description: 'The KTM naked beast. 1301cc V-Twin engine with 180 HP of pure adrenaline.',
     category: 'naked',
     engine: '1301cc, V-Twin',
     power: '180 HP @ 9,500 rpm',
     weight: '189 kg',
     features: [
-      'Control de tracción MTC',
+      'MTC traction control',
       'Cornering ABS',
       'Quick shifter +',
       'Cruise control',
-      'Pantalla TFT'
+      'TFT display'
     ],
     inStock: true
   },
@@ -405,17 +405,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 10499,
     image: 'https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&h=600&fit=crop',
-    description: 'Naked deportiva con motor CP3 de 890cc. Diversión garantizada en cada curva.',
+    description: 'Sport naked with 890cc CP3 engine. Fun guaranteed on every curve.',
     category: 'naked',
-    engine: '890cc, 3 cilindros en línea',
+    engine: '890cc, Inline 3-cylinder',
     power: '119 HP @ 10,000 rpm',
     weight: '189 kg',
     features: [
-      'Control de tracción',
-      'Modos de conducción',
+      'Traction control',
+      'Riding modes',
       'Quick shifter',
-      'Pantalla TFT',
-      'LED completo'
+      'TFT display',
+      'Full LED'
     ],
     inStock: true
   },
@@ -427,17 +427,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 28500,
     image: 'https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=800&h=600&fit=crop',
-    description: 'Superbike de competición homologada. Tecnología directa de MotoGP.',
+    description: 'Homologated racing superbike. Direct MotoGP technology.',
     category: 'sport',
-    engine: '999cc, 4 cilindros en línea',
+    engine: '999cc, Inline 4-cylinder',
     power: '217 HP @ 14,500 rpm',
     weight: '201 kg',
     features: [
-      'Control de tracción avanzado',
+      'Advanced traction control',
       'Cornering ABS',
-      'Quick shifter bidireccional',
-      'Suspensión Öhlins electrónica',
-      'Alas aerodinámicas'
+      'Bidirectional quick shifter',
+      'Electronic Öhlins suspension',
+      'Aerodynamic wings'
     ],
     inStock: true
   },
@@ -449,17 +449,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 18995,
     image: 'https://images.unsplash.com/photo-1568772684993-e3d9d1befd1d?w=800&h=600&fit=crop',
-    description: 'Superbike alemana con tecnología de punta. Motor de 999cc con 205 HP.',
+    description: 'German superbike with cutting-edge technology. 999cc engine with 205 HP.',
     category: 'sport',
-    engine: '999cc, 4 cilindros en línea',
+    engine: '999cc, Inline 4-cylinder',
     power: '205 HP @ 13,500 rpm',
     weight: '197 kg',
     features: [
-      'Control de tracción DTC',
+      'DTC traction control',
       'ABS Pro',
-      'Modos de conducción Pro',
+      'Pro riding modes',
       'Quick shifter Pro',
-      'Suspensión DDC'
+      'DDC suspension'
     ],
     inStock: true
   },
@@ -471,17 +471,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 8999,
     image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&h=600&fit=crop',
-    description: 'Adventure versátil y accesible. Perfecta para viajes y uso diario.',
+    description: 'Versatile and accessible adventure. Perfect for trips and daily use.',
     category: 'adventure',
-    engine: '649cc, Bicilíndrico paralelo',
+    engine: '649cc, Parallel twin-cylinder',
     power: '69 HP @ 8,500 rpm',
     weight: '216 kg',
     features: [
       'ABS',
-      'Pantalla LCD',
-      'Maletas opcionales',
-      'Asiento ajustable',
-      'Protección de viento'
+      'LCD display',
+      'Optional cases',
+      'Adjustable seat',
+      'Wind protection'
     ],
     inStock: true
   },
@@ -493,17 +493,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 20499,
     image: 'https://images.unsplash.com/photo-1558980664-769d59546b3d?w=800&h=600&fit=crop',
-    description: 'Cruiser clásica con estilo inconfundible. Motor Milwaukee-Eight 114.',
+    description: 'Classic cruiser with unmistakable style. Milwaukee-Eight 114 engine.',
     category: 'cruiser',
     engine: '1868cc, V-Twin Milwaukee-Eight 114',
     power: '119 HP @ 5,020 rpm',
     weight: '317 kg',
     features: [
       'ABS',
-      'Control de tracción',
+      'Traction control',
       'Cruise control',
-      'Llantas de disco sólido',
-      'Escape dual'
+      'Solid disc wheels',
+      'Dual exhaust'
     ],
     inStock: true
   },
@@ -515,17 +515,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 11999,
     image: 'https://images.unsplash.com/photo-1558980664-3a031cf67ea8?w=800&h=600&fit=crop',
-    description: 'Deportiva de peso medio con motor bicilíndrico paralelo de 659cc.',
+    description: 'Middleweight sport bike with 659cc parallel twin-cylinder engine.',
     category: 'sport',
-    engine: '659cc, Bicilíndrico paralelo',
+    engine: '659cc, Parallel twin-cylinder',
     power: '100 HP @ 10,500 rpm',
     weight: '183 kg',
     features: [
       'APRC (Aprilia Performance Ride Control)',
       'Cornering ABS',
-      'Modos de conducción',
+      'Riding modes',
       'Quick shifter',
-      'Pantalla TFT'
+      'TFT display'
     ],
     inStock: true
   },
@@ -537,17 +537,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 5499,
     image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&h=600&fit=crop',
-    description: 'Adventure accesible y confiable. Perfecta para exploradores.',
+    description: 'Accessible and reliable adventure. Perfect for explorers.',
     category: 'adventure',
-    engine: '411cc, Monocilíndrico',
+    engine: '411cc, Single-cylinder',
     power: '24.3 HP @ 6,500 rpm',
     weight: '199 kg',
     features: [
       'ABS',
-      'Navegación Tripper',
-      'Protección de motor',
-      'Asiento cómodo',
-      'Portaequipajes'
+      'Tripper navigation',
+      'Engine protection',
+      'Comfortable seat',
+      'Luggage rack'
     ],
     inStock: true
   },
@@ -559,17 +559,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 11299,
     image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&h=600&fit=crop',
-    description: 'Naked retro-moderna con motor CP3. Estilo vintage con tecnología actual.',
+    description: 'Retro-modern naked with CP3 engine. Vintage style with current technology.',
     category: 'naked',
-    engine: '890cc, 3 cilindros en línea',
+    engine: '890cc, Inline 3-cylinder',
     power: '119 HP @ 10,000 rpm',
     weight: '193 kg',
     features: [
-      'Control de tracción',
-      'Modos de conducción',
+      'Traction control',
+      'Riding modes',
       'Quick shifter',
-      'Pantalla TFT',
-      'Diseño retro'
+      'TFT display',
+      'Retro design'
     ],
     inStock: true
   },
@@ -581,17 +581,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 23995,
     image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&h=600&fit=crop',
-    description: 'Adventure touring de lujo con motor V4 Granturismo. Tecnología radar.',
+    description: 'Luxury adventure touring with V4 Granturismo engine. Radar technology.',
     category: 'adventure',
     engine: '1158cc, V4 Granturismo',
     power: '170 HP @ 10,500 rpm',
     weight: '243 kg',
     features: [
-      'Radar frontal y trasero',
-      'Suspensión electrónica',
-      'Control de crucero adaptativo',
-      'Pantalla TFT 6.5"',
-      'Maletas laterales'
+      'Front and rear radar',
+      'Electronic suspension',
+      'Adaptive cruise control',
+      '6.5" TFT display',
+      'Side cases'
     ],
     inStock: false
   },
@@ -603,17 +603,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 5499,
     image: 'https://images.unsplash.com/photo-1558981359-219d6364c9c8?w=800&h=600&fit=crop',
-    description: 'Deportiva de entrada perfecta para principiantes. Motor bicilíndrico de 399cc.',
+    description: 'Perfect entry-level sport bike for beginners. 399cc twin-cylinder engine.',
     category: 'sport',
-    engine: '399cc, Bicilíndrico paralelo',
+    engine: '399cc, Parallel twin-cylinder',
     power: '49 HP @ 10,000 rpm',
     weight: '168 kg',
     features: [
       'ABS',
-      'Chasis ligero',
-      'Ergonomía deportiva',
-      'Bajo consumo',
-      'Fácil manejo'
+      'Lightweight chassis',
+      'Sport ergonomics',
+      'Low fuel consumption',
+      'Easy handling'
     ],
     inStock: true
   },
@@ -625,16 +625,16 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 15999,
     image: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=800&h=600&fit=crop',
-    description: 'Legendaria adventure con motor bicilíndrico paralelo de 1084cc.',
+    description: 'Legendary adventure with 1084cc parallel twin-cylinder engine.',
     category: 'adventure',
-    engine: '1084cc, Bicilíndrico paralelo',
+    engine: '1084cc, Parallel twin-cylinder',
     power: '102 HP @ 7,500 rpm',
     weight: '238 kg',
     features: [
-      'DCT (transmisión automática)',
-      'Control de tracción',
-      'Modos de conducción',
-      'Pantalla TFT',
+      'DCT (automatic transmission)',
+      'Traction control',
+      'Riding modes',
+      'TFT display',
       'Apple CarPlay'
     ],
     inStock: true
@@ -647,17 +647,17 @@ export const motorcycles: Motorcycle[] = [
     year: 2024,
     price: 15995,
     image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&h=600&fit=crop',
-    description: 'Scrambler de alto rendimiento con estilo clásico y tecnología moderna.',
+    description: 'High-performance scrambler with classic style and modern technology.',
     category: 'adventure',
-    engine: '1200cc, Bicilíndrico paralelo',
+    engine: '1200cc, Parallel twin-cylinder',
     power: '90 HP @ 7,400 rpm',
     weight: '207 kg',
     features: [
-      'Modos de conducción',
-      'Control de tracción',
-      'ABS desconectable',
-      'Suspensión Öhlins',
-      'Neumáticos mixtos'
+      'Riding modes',
+      'Traction control',
+      'Switchable ABS',
+      'Öhlins suspension',
+      'Mixed tires'
     ],
     inStock: true
   }
