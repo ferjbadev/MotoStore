@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Truck, CreditCard, Award } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { MotorcycleCard } from '../components/MotorcycleCard';
 import { motorcycles } from '../data/motorcycles';
 
@@ -9,7 +10,12 @@ export const Home = () => {
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero">
+      <motion.section 
+        className="hero"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="container">
           <div className="hero-content">
             <h1 className="hero-title">
@@ -25,10 +31,16 @@ export const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Features Section */}
-      <section className="features">
+      <motion.section 
+        className="features"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="container">
           <div className="features-grid">
             <div className="feature-card">
@@ -53,10 +65,16 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Featured Products */}
-      <section className="featured-products">
+      <motion.section 
+        className="featured-products"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="container">
           <div className="section-header">
             <h2>Featured Motorcycles</h2>
@@ -70,10 +88,16 @@ export const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* CTA Section */}
-      <section className="cta-section">
+      <motion.section 
+        className="cta-section"
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="container">
           <div className="cta-content">
             <h2>Ready for Your Next Adventure?</h2>
@@ -91,7 +115,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };
