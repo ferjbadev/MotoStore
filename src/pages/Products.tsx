@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Search, SlidersHorizontal } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { MotorcycleCard } from '../components/MotorcycleCard';
 import { motorcycles } from '../data/motorcycles';
 
@@ -71,13 +72,23 @@ export const Products = () => {
   return (
     <div className="products-page">
       <div className="container">
-        <div className="page-header">
+        <motion.div 
+          className="page-header"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <h1>Our Catalog</h1>
           <p>Explore our selection of premium motorcycles</p>
-        </div>
+        </motion.div>
 
         {/* Filters */}
-        <div className="filters-section">
+        <motion.div 
+          className="filters-section"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <div className="search-box">
             <Search size={20} />
             <input
@@ -108,27 +119,42 @@ export const Products = () => {
               <option value="year">Year</option>
             </select>
           </div>
-        </div>
+        </motion.div>
 
         {/* Results */}
-        <div className="results-info">
+        <motion.div 
+          className="results-info"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+        >
           <p>
             Showing {filteredAndSortedMotorcycles.length} of {motorcycles.length}{' '}
             motorcycles
           </p>
-        </div>
+        </motion.div>
 
         {/* Products Grid */}
         {filteredAndSortedMotorcycles.length > 0 ? (
-          <div className="products-grid">
+          <motion.div 
+            className="products-grid"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
             {filteredAndSortedMotorcycles.map((motorcycle) => (
               <MotorcycleCard key={motorcycle.id} motorcycle={motorcycle} />
             ))}
-          </div>
+          </motion.div>
         ) : (
-          <div className="no-results">
+          <motion.div 
+            className="no-results"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+          >
             <p>No motorcycles found with the selected filters.</p>
-          </div>
+          </motion.div>
         )}
       </div>
     </div>
