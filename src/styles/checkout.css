@@ -82,6 +82,10 @@
   top: 100px;
 }
 
+.order-summary h2 {
+  text-align: center;
+}
+
 .summary-items {
   display: flex;
   flex-direction: column;
