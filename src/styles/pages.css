@@ -105,28 +105,37 @@
 .contact-info h2 {
   font-size: 1.75rem;
   margin-bottom: var(--spacing-md);
+  text-align: center;
 }
 
 .contact-item {
   display: flex;
   gap: var(--spacing-md);
   align-items: flex-start;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contact-item > div {
+  width: 100%;
 }
 
 .contact-item svg {
   color: var(--primary-color);
   flex-shrink: 0;
-  margin-top: 0.25rem;
+  margin: 0 auto var(--spacing-sm) auto;
 }
 
 .contact-item h3 {
   font-size: 1.125rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .contact-item p {
   color: var(--text-light);
-  margin: 0;
+  margin: 0.25rem 0;
+  text-align: center;
 }
 
 .contact-form {
@@ -139,6 +148,14 @@
 .contact-form h2 {
   font-size: 1.75rem;
   margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.contact-form button[type="submit"] {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 968px) {
