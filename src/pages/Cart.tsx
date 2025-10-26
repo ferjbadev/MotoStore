@@ -11,10 +11,10 @@ export const Cart = () => {
         <div className="container">
           <div className="empty-cart">
             <ShoppingBag size={64} />
-            <h2>Tu carrito está vacío</h2>
-            <p>Agrega algunas motos increíbles a tu carrito</p>
+            <h2>Your cart is empty</h2>
+            <p>Add some amazing motorcycles to your cart</p>
             <Link to="/productos" className="btn-primary">
-              Explorar Catálogo
+              Explore Catalog
             </Link>
           </div>
         </div>
@@ -25,7 +25,7 @@ export const Cart = () => {
   return (
     <div className="cart-page">
       <div className="container">
-        <h1 className="page-title">Carrito de Compras</h1>
+        <h1 className="page-title">Shopping Cart</h1>
 
         <div className="cart-layout">
           <div className="cart-items">
@@ -90,7 +90,7 @@ export const Cart = () => {
           </div>
 
           <div className="cart-summary">
-            <h2>Resumen del Pedido</h2>
+            <h2>Order Summary</h2>
 
             <div className="summary-row">
               <span>Subtotal:</span>
@@ -98,8 +98,8 @@ export const Cart = () => {
             </div>
 
             <div className="summary-row">
-              <span>Envío:</span>
-              <span className="free-shipping">Gratis</span>
+              <span>Shipping:</span>
+              <span className="free-shipping">Free</span>
             </div>
 
             <div className="summary-divider"></div>
@@ -110,12 +110,12 @@ export const Cart = () => {
             </div>
 
             <Link to="/checkout" className="btn-primary btn-full">
-              Proceder al Pago
+              Proceed to Checkout
               <ArrowRight size={20} />
             </Link>
 
             <Link to="/productos" className="continue-shopping">
-              Continuar Comprando
+              Continue Shopping
             </Link>
           </div>
         </div>
